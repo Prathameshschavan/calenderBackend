@@ -55,6 +55,9 @@ async function enrollFun(hours){
                 }
                 let year =courseStartDate.getFullYear();
                 let date = courseStartDate.getDate();
+                if(date<10){
+                    date="0"+date;
+                }
                 let obj ={
                     id: arr[i].id,
                     title: arr[i].title,
